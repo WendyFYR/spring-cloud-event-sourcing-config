@@ -92,7 +92,7 @@ security:
 server:
   session:
     cookie:
-      name:onlineweb
+      name: onlineweb
 eureka:
   instance:
     non-secure-port: 8787
