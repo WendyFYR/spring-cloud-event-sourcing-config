@@ -10,6 +10,11 @@ security:
   enable-csrf: false
 spring:
   profiles: cloud
+  datasource:
+    url: mysql-service.default.svc.cluster.local
+    username: root
+    password: dbpass
+    initialize: true
 security.ignored: /resources/**
 ---
 server:
