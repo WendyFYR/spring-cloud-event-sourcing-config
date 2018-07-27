@@ -5,8 +5,13 @@ spring:
 spring:
   profiles: cloud
   redis:
-    host: ${vcap.services.catalog-redis.credentials.hostname:localhost}
-    port: ${vcap.services.catalog-redis.credentials.port:6379}
+    host: redis-service.default.svc.cluster.local
+    port: 6379
+  datasource:
+    url: jdbc:mysql://mysql-service.default.svc.cluster.local/dev
+    username: root
+    password: dbpass
+    initialize: false
 ---
 spring:
   profiles: development
