@@ -3,6 +3,7 @@ spring:
     active: development
 ---
 server:
+  port: 8181
   contextPath: /uaa
 security:
   user:
