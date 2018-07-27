@@ -11,7 +11,7 @@ security:
 spring:
   profiles: cloud
   datasource:
-    url: jdbc:mysql://mysql-service.default.svc.cluster.local/dev
+    url: jdbc:mysql://mysql-service.default.svc.cluster.local:3306/dev
     username: root
     password: dbpass
     initialize: true
