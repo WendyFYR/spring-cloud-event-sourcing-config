@@ -11,7 +11,7 @@ zuul:
   routes:
     edge-service:
       path: /api/**
-      url: ${vcap.services.edge-service.credentials.uri:http://localhost:9999}
+      url: http://edge-service.default.svc.cluster.local:9999
     auth-service:
       path: /user/**
       url: http://user-service.default.svc.cluster.local:8181/uaa/user
