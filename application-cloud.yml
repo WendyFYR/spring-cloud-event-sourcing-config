@@ -3,7 +3,7 @@ eureka:
     hostname: ${spring.application.name}.default.svc.cluster.local:${server.port}
     nonSecurePort: 80
     metadataMap:
-      instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}}
+      instanceId: ${spring.application.name}:${spring.application.instance_id}:${server.port}
     leaseRenewalIntervalInSeconds: 5
   client:
     region: default
