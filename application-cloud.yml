@@ -1,6 +1,7 @@
 eureka:
   instance:
-    instance-id: http://${spring.application.name}.default.svc.cluster.local:${server.port}
+    hostname: ${spring.application.name}.default.svc.cluster.local
+    instance-id: ${spring.application.name}.default.svc.cluster.local:${spring.application.name}:${server.port}
     nonSecurePort: 80
     metadataMap:
       instanceId: ${spring.application.name}:${server.port}
