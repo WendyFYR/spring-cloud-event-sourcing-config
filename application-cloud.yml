@@ -1,5 +1,7 @@
 eureka:
   instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}.default.svc.cluster.local
     nonSecurePort: 80
     metadataMap:
       instanceId: ${spring.application.name}:${server.port}
