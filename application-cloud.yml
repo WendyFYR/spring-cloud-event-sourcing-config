@@ -4,7 +4,7 @@ eureka:
     nonSecurePort: 80
     metadataMap:
       instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}}
-leaseRenewalIntervalInSeconds: 5
+    leaseRenewalIntervalInSeconds: 5
   client:
     region: default
     registryFetchIntervalSeconds: 5
