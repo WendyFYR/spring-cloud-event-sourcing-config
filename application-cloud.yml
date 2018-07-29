@@ -1,6 +1,5 @@
 eureka:
   instance:
-    nonSecurePort: ${server.port}
     leaseRenewalIntervalInSeconds: 5
   client:
     region: default
