@@ -1,7 +1,7 @@
 eureka:
   instance:
     prefer-ip-address: true
-    ip-address: ${spring.application.name}.default.svc.cluster.local:${server.port}
+    ip-address: 9.98.12.25:31708
     hostname: ${spring.application.name}.default.svc.cluster.local
     instance-id: ${spring.application.name}.default.svc.cluster.local:${server.port}
     nonSecurePort: 80
