@@ -31,7 +31,7 @@ security:
 server:
   session:
     cookie:
-      name: APPSESSIONID
+      name: APPSESSIONID123
 ---
 spring:
   profiles: development
