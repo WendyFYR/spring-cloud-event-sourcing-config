@@ -28,6 +28,10 @@ security:
       clientId: acme
       clientSecret: acmesecret
   ignored: /assets/**
+server:
+  session:
+    cookie:
+      name: APPSESSIONID
 ---
 spring:
   profiles: development
