@@ -21,10 +21,10 @@ security:
   enable-csrf: false
   oauth2:
     resource:
-      userInfoUri: http://user-service/uaa/user
+      userInfoUri: http://9.98.12.25:31704/uaa/user
     client:
-      accessTokenUri: http://user-service/uaa/oauth/token
-      userAuthorizationUri: http://user-service/uaa/oauth/authorize
+      accessTokenUri: http://9.98.12.25:31704/uaa/oauth/token
+      userAuthorizationUri: http://9.98.12.25:31704/uaa/oauth/authorize
       clientId: acme
       clientSecret: acmesecret
   ignored: /assets/**
