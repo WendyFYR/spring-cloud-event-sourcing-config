@@ -14,7 +14,7 @@ zuul:
       url: http://edge-service.default.svc.cluster.local:9999
     auth-service:
       path: /user/**
-      url: http://user-service/uaa/user
+      url: http://9.98.12.25:31704/uaa/user
     user-service:
       path: /users/**
 security:
