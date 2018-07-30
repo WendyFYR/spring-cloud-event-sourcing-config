@@ -32,7 +32,6 @@ server:
   session:
     cookie:
       name: APPSESSIONID
-  context-path: ui
 ---
 spring:
   profiles: development
