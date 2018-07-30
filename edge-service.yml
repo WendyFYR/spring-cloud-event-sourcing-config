@@ -18,7 +18,7 @@ zuul:
 security:
   oauth2:
     resource:
-      userInfoUri: user-service.default.svc.cluster.local:8181/uaa/user
+      userInfoUri: http://9.98.12.25:31704/uaa/user
   ignored: /catalog/**
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
 ribbon:
