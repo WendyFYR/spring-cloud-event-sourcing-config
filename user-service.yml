@@ -5,6 +5,9 @@ spring:
 server:
   port: 8181
   contextPath: /uaa
+  session:
+    cookie:
+      name: APPSESSIONIDUAA
 security:
   user:
     password: password
