@@ -5,4 +5,4 @@ eureka:
     region: default
     registryFetchIntervalSeconds: 5
     serviceUrl:
-      defaultZone: http://discovery-service.default.svc.cluster.local:8761/eureka/
+      defaultZone: http://discovery-service:8761/eureka/
