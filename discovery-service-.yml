@@ -1,0 +1,5 @@
+eureka:
+  client:
+    # Disable the client side behaviour in standalone mode
+    registerWithEureka: false
+    fetchRegistry: false
