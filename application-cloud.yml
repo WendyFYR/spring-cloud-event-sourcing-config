@@ -1,6 +1,7 @@
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 5
+    prefer-ip-address: true
   client:
     region: default
     registryFetchIntervalSeconds: 5
