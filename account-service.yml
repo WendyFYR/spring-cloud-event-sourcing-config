@@ -1,13 +1,13 @@
 spring:
   profiles:
-    active: development
+    active: cloud
 ---
 spring:
   profiles: cloud
 security:
   oauth2:
     resource:
-      userInfoUri: ${vcap.services.user-service.credentials.uri:http://localhost:8181}/uaa/user
+      userInfoUri: http://user-service:8181/uaa/user
     client:
       client-id: acme
 ---
